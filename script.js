@@ -20,7 +20,7 @@ tl.from(".line-part1",{
            else{
               h5timer.innerHTML=grow;
             }
-        },25)
+        },30)
     }
 })
 tl.to(".line h2",{
@@ -45,6 +45,29 @@ tl.from("#page1",{
 tl.to("#loader",{
     display:"none"
 })
+
+tl.from("#content h1",{
+    y:120,
+    stagger:0.2 
+})
+
+tl.from("#nav",{
+    opacity:0
+})
+
 }
 
 loadingAnimation()
+
+function cursorAnimation(){
+    document.addEventListener("mousemove",function(dets){
+    gsap.to("#crsr",{
+        left:dets.x,
+        top:dets.y
+    })
+})
+
+Shery.makeMagnet("#navPart2 h4");
+}
+
+cursorAnimation()

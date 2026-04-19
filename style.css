@@ -11,6 +11,21 @@ html,body{
     color: white;
 }
 
+
+
+#crsr{
+    height: 2.3vw;
+    width: 2.3vw;
+    border-radius: 50%;
+    /* background-color: white; */
+    position: fixed;
+    z-index: 9999;
+    border: 2px solid #ffffffbe;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+    /* iski wjh se cursor ka point centre ko follow karega */
+
+}
 #loader{
     height: 100%;
     width: 100%;
@@ -18,6 +33,7 @@ html,body{
     z-index: 999;
     background-color: #0b0b0b;
     padding: 25vh 10vw;
+    cursor: none;
 }
 
 .line{ 
@@ -70,6 +86,13 @@ html,body{
         font-weight: 500;
         opacity: 1;
     }
+     1%{
+        font-family: "Plain Light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 1;
+    }
      47%{
         font-family: "Plain Light";
         -webkit-text-stroke: 1px #fff;
@@ -100,4 +123,41 @@ html,body{
       height: 100vh;/*kyunki parent ko height nhi di to chlega nhi agar % me doge */
       width: 100%;
       background-color: #151515;
+      cursor: none;
+}
+
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 4.5vw;
+    cursor: none;
+}
+
+#navPart2{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    justify-content: center;
+    cursor: none;
+}
+
+#navPart2 h4{
+    font-size: 1vw;
+}
+#content{
+    width: 72%;
+    margin-left: 27%;
+    height: fit-content;
+    overflow: hidden;
+}
+#content h1{
+    font-size: 7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+}
+#content:nth-child(2){
+    margin-top: 18vh;
 }
