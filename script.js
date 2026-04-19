@@ -47,7 +47,7 @@ tl.to("#loader",{
 })
 
 tl.from("#content1 h1,#content2 h1,#content3 h2,#content4 h1",{
-    y:120,
+    y:140,
     stagger:0.2 
 })
 
