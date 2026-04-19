@@ -146,18 +146,44 @@ html,body{
 #navPart2 h4{
     font-size: 1vw;
 }
-#content{
+.content{
     width: 72%;
     margin-left: 27%;
     height: fit-content;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+    z-index: 9999;
 }
-#content h1{
+.content h1{
     font-size: 7.2vw;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7.2vw;
 }
-#content:nth-child(2){
+.content:nth-child(2){
     margin-top: 18vh;
+}
+
+#content3 h2{
+    font-size: 7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+    border-bottom: 0.5vw solid #fff;
+    padding-bottom: 0.8vw;
+    /* transition: all ease 0.3s; */
+}
+
+#content3 h2:hover{
+    -webkit-text-stroke: 0.8px #fff;
+    color: transparent;
+    font-weight: 500;
+    border-bottom: none;
+}
+
+#content3 #h2slash{
+    border-bottom: none;
 }
