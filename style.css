@@ -334,5 +334,62 @@ body{
     min-height: 100vh;
     width: 100%;
     padding: 5vw  0;
-    background-color: #0b0b0b;
+    background-color: #151515;
+    position: relative;
+}
+.scroller,.scroller2{
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: -1vw;
+    
+}
+
+.scroller h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #E4E4E4;
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 16px;
+    /* background-color: red; */
+    animation-name: anime2;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    /* isse sb ek line me ajayega jitni jagah h  */
+}
+
+
+@keyframes anime2 {
+    from{
+      transform: translateX(0);  
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+    
+}
+
+.scroller2 h1{
+        font-size: 7vw;
+    -webkit-text-stroke: 1px #E4E4E4;
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 16px;
+    transform: translateX(calc(-100% - 20px));
+    /* calc isliye lgaya kyunki inline block lene se already 4 px space thi aur 16 alag se de di thi humne */
+    /* background-color: red; */
+    animation-name: anime2;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+.scroller span, .scroller2 span{
+    font-family: "Silk Serif";
 }
