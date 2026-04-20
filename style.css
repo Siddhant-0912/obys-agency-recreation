@@ -123,7 +123,7 @@ body{
 }
 
 #page1{
-      height: 100vh;/*kyunki parent ko height nhi di to chlega nhi agar % me doge */
+      height: 90vh;/*kyunki parent ko height nhi di to chlega nhi agar % me doge */
       width: 100%;
       background-color: #151515;
       cursor: none;
@@ -151,20 +151,33 @@ body{
 }
 .content{
     width: 72%;
-    margin-left: 27%;
+    margin-left: 22%;
     height: fit-content;
-    overflow: hidden;
+    overflow-y: hidden;
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    position: relative;
+    position: relative; 
     z-index: 9999;
+    padding-left: 5%;
 }
+
 .content h1{
     font-size: 7.2vw;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7.2vw;
+    position: relative;
+}
+
+#content1 h1::before{
+    content: "01"; 
+    position: absolute;
+    font-size: 3vw;
+    font-family: "Silk Serif";
+    font-weight: 100;
+    left: -5vw;
+    top: -25%;
 }
 .content:nth-child(2){
     margin-top: 18vh;
@@ -253,7 +266,17 @@ body{
 #page4-content{
     width: 65vw;
     margin-left: 28vw;
+    position: relative;
 
+}
+#page4-content h1::before{
+    content: "03"; 
+    position: absolute;
+    font-size: 3vw;
+    font-family: "Silk Serif";
+    font-weight: 100;
+    left: -12%;
+    top: 1.5%;
 }
 
 #page4-content h1{
@@ -393,3 +416,63 @@ body{
 .scroller span, .scroller2 span{
     font-family: "Silk Serif";
 }
+
+
+#footer{
+    height: 90vh;
+    width: 100%;
+    background-color: #0b0b0b;
+    padding-left: 28vw;
+}
+
+#footer h1{
+    font-size: 7vw;
+    width: 68vw;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+#footer h1::before{
+    content: "04"; 
+    position: absolute;
+    font-size: 3vw;
+    font-family: "Silk Serif";
+    font-weight: 100;
+    left: -12%;
+    top: 12%;
+}
+#footer #bottom-line{    
+    height: 0.1vw;
+    width: 65vw;
+    background-color: #fff;
+    margin: 2vw 0;
+}
+
+#footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 65vw;
+    padding-right: 8vw;
+    padding-top: 3vw;
+    margin-bottom: 5vw;
+} 
+
+#footer-div h6{
+    font-size: 1.1vw;
+    margin-bottom: 1vw;
+    font-weight: 900;
+}
+#footer-div h5{
+    font-size: 1.4vw;
+    margin: 0.2vh 0;
+    font-weight: 500;
+}
+.box{
+    width: 20%;
+}
+
+#footer>h5{
+    font-weight: 500;
+    font-size: 1vw;
+} 

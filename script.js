@@ -45,16 +45,13 @@ tl.from("#page1",{
 tl.to("#loader",{
     display:"none"
 })
-
+tl.from("#nav",{
+    opacity:0
+})
 tl.from("#content1 h1,#content2 h1,#content3 h2,#content4 h1",{
     y:140,
     stagger:0.2 
 })
-
-tl.from("#nav",{
-    opacity:0
-})
-
 }
 
 loadingAnimation()
